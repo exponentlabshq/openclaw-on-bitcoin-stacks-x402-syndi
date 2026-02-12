@@ -1,0 +1,14 @@
+# Secrets — never commit these
+.env
+wallet-registry.json
+
+# Dependencies
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Runtime
+conversations/
+*.mp4

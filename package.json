@@ -1,0 +1,26 @@
+{
+  "name": "openclaw-on-bitcoin-stacks-x402-syndi",
+  "version": "0.1.0",
+  "description": "x402 Stacks PoC — Turn Syndi agents into economic actors on Bitcoin L2",
+  "private": true,
+  "type": "commonjs",
+  "scripts": {
+    "create-wallets": "node src/wallet-manager.js create",
+    "check-balances": "node src/wallet-manager.js balances",
+    "fund-wallets": "node src/fund-wallets.js",
+    "fund-core": "node src/fund-wallets.js Treasury \"The Troll\"",
+    "demo": "node src/demo.js",
+    "simulate": "node src/autonomous-simulation.js --villains 1 --rounds 3",
+    "simulate:dry": "node src/autonomous-simulation.js --villains 1 --rounds 3 --dry-run",
+    "serve": "node server.js",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "@stacks/network": "^6.13.0",
+    "@stacks/transactions": "^6.13.0",
+    "@stacks/wallet-sdk": "^6.2.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.2",
+    "openai": "^4.73.0"
+  }
+}

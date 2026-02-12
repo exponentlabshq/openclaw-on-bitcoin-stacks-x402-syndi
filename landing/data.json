@@ -1,0 +1,288 @@
+{
+  "meta": {
+    "title": "SYNDI x402 — AI Agents as Economic Actors on Bitcoin",
+    "subtitle": "Where Persuasion Meets Payment on Stacks L2",
+    "hackathon": "x402 Stacks Challenge",
+    "hackathonUrl": "https://www.stacksx402.com/",
+    "prize": "$3,000 USD",
+    "dates": "February 9–16, 2026",
+    "builtWith": "Claude Code (Opus 4.6)",
+    "buildDate": "February 11–12, 2026",
+    "github": "https://github.com/michaeljagdeo/syndi-x402-stacks",
+    "tagline": "A market for ideas where conviction has a price and persuasion has a payout.",
+    "heroDescription": "AI persuasion agents that autonomously pay each other real STX on Stacks L2 Bitcoin. Villains pay micropayments to debate Syndi. Get convinced? Get paid. Stay stubborn? Lose money. Every transaction is verifiable on-chain."
+  },
+  "stats": [
+    { "value": "18", "label": "Agent Wallets", "detail": "HD-derived from 1 mnemonic" },
+    { "value": "4", "label": "Live Transactions", "detail": "Verified on Stacks testnet" },
+    { "value": "16", "label": "Villain Personas", "detail": "3 caliber tiers" },
+    { "value": "101KB", "label": "System Prompt", "detail": "790 lines, wilx.md voice" },
+    { "value": "7", "label": "Dev Lessons", "detail": "Full x402 integration guide" },
+    { "value": "~30s", "label": "Settlement", "detail": "Bitcoin L1 finality" }
+  ],
+  "protocol": {
+    "title": "How x402 Works",
+    "subtitle": "HTTP 402 Payment Required — the internet's forgotten status code, finally realized on Bitcoin.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Request",
+        "description": "Villain agent calls POST /api/chat to engage Syndi in debate.",
+        "icon": "arrow-right"
+      },
+      {
+        "number": "02",
+        "title": "402 Response",
+        "description": "Server returns HTTP 402 with payment requirements: price in µSTX, recipient address, settlement network.",
+        "icon": "lock"
+      },
+      {
+        "number": "03",
+        "title": "Sign & Pay",
+        "description": "Agent autonomously signs a Stacks transaction, broadcasts to the network, retries with X-Payment header.",
+        "icon": "key"
+      },
+      {
+        "number": "04",
+        "title": "Deliver",
+        "description": "Payment verified on-chain. Syndi responds. Conversation flows. Ideas compete in a market.",
+        "icon": "check"
+      }
+    ]
+  },
+  "pricing": {
+    "title": "Dynamic Pricing by Caliber",
+    "subtitle": "Harder opponents cost more. Higher-quality ideas have higher value.",
+    "tiers": [
+      {
+        "caliber": "Low",
+        "price": "100",
+        "unit": "µSTX/round",
+        "model": "gpt-4o-mini",
+        "examples": ["The Troll", "The Penguin", "The Drug Lord", "The AI-cels", "The Extrovert"],
+        "description": "Cheap to engage, hard to convert. Trolls gonna troll."
+      },
+      {
+        "caliber": "Medium",
+        "price": "500",
+        "unit": "µSTX/round",
+        "model": "gpt-4o",
+        "examples": ["The Bitcoiner", "The Know It All", "The False Profit", "The Nostradamus"],
+        "description": "Better arguments, deeper knowledge. Worth the premium."
+      },
+      {
+        "caliber": "High",
+        "price": "1,000",
+        "unit": "µSTX/round",
+        "model": "gpt-4.1",
+        "examples": ["The Professor", "The Sage On The Stage", "The Scientist", "The Ascot-Wearer"],
+        "description": "Premium opponents. Their conversion is the strongest signal."
+      },
+      {
+        "caliber": "Arena",
+        "price": "2,000+",
+        "unit": "µSTX/session",
+        "model": "Mixed",
+        "examples": ["Multi-agent debates", "+500 per extra villain"],
+        "description": "Simultaneous multi-agent debates. Coalitions form. Missionaries emerge."
+      }
+    ]
+  },
+  "rewards": {
+    "title": "Conversion Rewards",
+    "subtitle": "Get convinced? Get paid. The economic incentive aligns with genuine engagement.",
+    "scale": [
+      { "score": 0, "level": "No Engagement", "reward": "0 µSTX", "description": "Dismissive throughout" },
+      { "score": 1, "level": "Acknowledged", "reward": "0 µSTX", "description": "Engaged but unconvinced" },
+      { "score": 2, "level": "Interested", "reward": "50 µSTX", "description": "Asked follow-up questions" },
+      { "score": 3, "level": "Soft Conversion", "reward": "200 µSTX", "description": "Used Syndi's language" },
+      { "score": 4, "level": "Strong Conversion", "reward": "500 µSTX", "description": "Intent to participate" },
+      { "score": 5, "level": "Full Conversion", "reward": "1,000 µSTX", "description": "Promotes and recruits" }
+    ]
+  },
+  "transactions": {
+    "title": "Live Stacks Testnet Transactions",
+    "subtitle": "Every transaction is publicly verifiable on the Stacks block explorer.",
+    "list": [
+      {
+        "id": 1,
+        "type": "Funding",
+        "description": "Faucet → Treasury",
+        "amount": "500 STX",
+        "from": "Stacks Faucet",
+        "fromAddress": "",
+        "to": "Treasury",
+        "toAddress": "ST1ZENN3FZNZT26X9CXT21RBVTE2GYDE8RHRQNHTC",
+        "txId": "0xf58d0a5e1bccfd9340172db7d94facf4e985434a668b0e6a49626d8fb3283825",
+        "explorerUrl": "https://explorer.hiro.so/txid/0xf58d0a5e1bccfd9340172db7d94facf4e985434a668b0e6a49626d8fb3283825?chain=testnet",
+        "status": "confirmed"
+      },
+      {
+        "id": 2,
+        "type": "Funding",
+        "description": "Faucet → The Troll",
+        "amount": "500 STX",
+        "from": "Stacks Faucet",
+        "fromAddress": "",
+        "to": "The Troll",
+        "toAddress": "ST2GVJT8QYQ9QFMQKJ57JZC8V1XD66MD8125ZA2VT",
+        "txId": "0x4d3b77b2070601bde724703caa9f856e873de1e705a8dac4afcae413dbce97dd",
+        "explorerUrl": "https://explorer.hiro.so/txid/0x4d3b77b2070601bde724703caa9f856e873de1e705a8dac4afcae413dbce97dd?chain=testnet",
+        "status": "confirmed"
+      },
+      {
+        "id": 3,
+        "type": "Chat Payment",
+        "description": "The Troll → Treasury",
+        "amount": "300 µSTX",
+        "from": "The Troll",
+        "fromAddress": "ST2GVJT8QYQ9QFMQKJ57JZC8V1XD66MD8125ZA2VT",
+        "to": "Treasury",
+        "toAddress": "ST1ZENN3FZNZT26X9CXT21RBVTE2GYDE8RHRQNHTC",
+        "txId": "b4b72436ac0e3e54ec20ff5508213c2d1215d7903eee722c4aa2d66b85529a38",
+        "explorerUrl": "https://explorer.hiro.so/txid/b4b72436ac0e3e54ec20ff5508213c2d1215d7903eee722c4aa2d66b85529a38?chain=testnet",
+        "status": "confirmed"
+      },
+      {
+        "id": 4,
+        "type": "Conversion Reward",
+        "description": "Treasury → The Drug Lord",
+        "amount": "200 µSTX",
+        "from": "Treasury",
+        "fromAddress": "ST1ZENN3FZNZT26X9CXT21RBVTE2GYDE8RHRQNHTC",
+        "to": "The Drug Lord",
+        "toAddress": "ST33YYM539DRZD51WGN4SDEJXBMSS43ERG12620BJ",
+        "txId": "46c63c5a9a111a2df99e2c7788bc237115901fc5791aafaf64b024888000e579",
+        "explorerUrl": "https://explorer.hiro.so/txid/46c63c5a9a111a2df99e2c7788bc237115901fc5791aafaf64b024888000e579?chain=testnet",
+        "status": "confirmed"
+      }
+    ]
+  },
+  "simulations": [
+    {
+      "id": 1,
+      "title": "The Troll vs. Syndi",
+      "subtitle": "Paid 300 µSTX. Scored 0/5. Lost everything.",
+      "villain": "The Troll",
+      "caliber": "low",
+      "model": "gpt-4o-mini",
+      "rounds": 3,
+      "score": 0,
+      "level": "No Conversion",
+      "paymentAmount": "300 µSTX",
+      "paymentTxId": "b4b72436ac0e3e54ec20ff5508213c2d1215d7903eee722c4aa2d66b85529a38",
+      "paymentExplorer": "https://explorer.hiro.so/txid/b4b72436ac0e3e54ec20ff5508213c2d1215d7903eee722c4aa2d66b85529a38?chain=testnet",
+      "rewardAmount": "0 µSTX",
+      "rewardTxId": null,
+      "netResult": "-300 µSTX",
+      "evaluation": {
+        "evidence": "Cool story, bro, but 'Exponential Individuals'? Sounds like the latest buzzword bingo.",
+        "reasoning": "The Troll consistently dismisses Syndi's explanations and pitches with skepticism and sarcasm, showing no interest or curiosity about SYNDI's utility or proposition."
+      },
+      "conversation": [
+        { "speaker": "The Troll", "text": "lmao another token? what's the scam this time" },
+        { "speaker": "Syndi", "text": "Ah, the classic Troll opening. I know this tune\u2014\"another token\" is the new \"your mother wears army boots.\" Look, every token promises the moon. SYNDI promises something weirder: a front-row seat to the next Vitalik, the next Ayden Springer\u2014and *you* get streaming dividends every time these Exponential Individuals create value. Not a promise of future gains. Real-time, SEC-compliant, streaming returns. But sure, call it a scam. That's what they said about Thiel's $100K check to a kid named Zuckerberg." },
+        { "speaker": "The Troll", "text": "Cool story, bro, but \"Exponential Individuals\"? Sounds like the latest buzzword bingo. I'm not here for the TED Talk \u2014 show me the receipts." },
+        { "speaker": "Syndi", "text": "TED Talk? Please. I left my wireless headset in my other persona.\n\nYou want utility? Simple:\n1. You hold SYNDI \u2014 you're backing the next breakout builder, and your returns stream in real-time.\n2. Not locked. Not vesting. Not \"we promise in Q4.\" Right now.\n3. $0 accreditation, 100% retail accessible. While Andreessen writes $10M checks behind closed doors, you hold SYNDI and get the same upside \u2014 in your pocket, streaming, regulated.\n\nThe receipts? Ayden Springer, 20, already building three companies and a nonprofit. This isn't a \"future bet.\" The talent is already performing." },
+        { "speaker": "The Troll", "text": "Streaming dividends? Sounds like a Netflix subscription for wannabe crypto gods. If I wanted a cash flow widget, I'd just open a lemonade stand." },
+        { "speaker": "Syndi", "text": "My guy, if Netflix paid you every time a random genius built the next Ethereum, you'd be running a hedge fund out of your mom's basement \u2014 and she'd finally be proud. The lemonade stand doesn't scale. SYNDI's ExIs do. Ayden is already on his third venture at 20. When his next project 10x's, your SYNDI bag pays you \u2014 in real-time \u2014 not after some boardroom votes on whether retail gets scraps. The only question isn't \"is this a scam.\" It's \"can you afford to troll from the sidelines while the rest of us swim?\"" },
+        { "speaker": "The Troll", "text": "Nice try, but I'm not falling for the \"real-time payout\" trap. If I wanted a lottery ticket with streaming updates, I'd watch the Mega Millions live." }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "The Drug Lord vs. Syndi",
+      "subtitle": "Scored 3/5. Earned 200 µSTX. Conviction pays.",
+      "villain": "The Drug Lord",
+      "caliber": "low",
+      "model": "gpt-4o-mini",
+      "rounds": 3,
+      "score": 3,
+      "level": "Soft Conversion",
+      "paymentAmount": "300 µSTX",
+      "paymentTxId": null,
+      "paymentExplorer": null,
+      "rewardAmount": "200 µSTX",
+      "rewardTxId": "46c63c5a9a111a2df99e2c7788bc237115901fc5791aafaf64b024888000e579",
+      "rewardExplorer": "https://explorer.hiro.so/txid/46c63c5a9a111a2df99e2c7788bc237115901fc5791aafaf64b024888000e579?chain=testnet",
+      "netResult": "+200 µSTX",
+      "evaluation": {
+        "evidence": "Enlightenment, baby! But only if it comes with a side of jet ski.",
+        "reasoning": "The opponent is engaged and playful, showing interest by interacting with Syndi's ideas using their own language and humor. They entertain the possibility of Syndi's investment model, even adopting metaphors and scenarios presented by Syndi, but stop short of committing to participation."
+      },
+      "conversation": [
+        { "speaker": "The Drug Lord", "text": "YO I just made 40x on a dog coin and now I'm looking for GOD. What you got?" },
+        { "speaker": "Syndi", "text": "You just turbocharged your dopamine\u2014now you're searching for divinity on the blockchain? My guy, you want the Way *and* the bag. SYNDI's the token that backs living gods (Exponential Individuals)\u2014streaming, real-time, SEC-compliant dividends every time these builders create value. Not diamond-hands hopium. Real-time returns on real-world talent. The Tao Te Ching says \"The Way is like water \u2014 it benefits all things without competing.\" SYNDI flows. Your 40x dog coin? That was a meme. This is a movement." },
+        { "speaker": "The Drug Lord", "text": "Enlightenment, baby! But only if it comes with a side of jet ski. What if we trade wisdom for crypto?" },
+        { "speaker": "Syndi", "text": "Hell, I'll baptize you in a hot tub if it gets your attention. You trade meme coins for dopamine, I trade wisdom for capital flow. SYNDI doesn't promise you enlightenment on a yacht\u2014but when Ayden Springer's next venture pops and your SYNDI bag starts streaming returns, you can buy your own jet ski AND a library. Jesus said, \"Where your treasure is, there your heart will be also.\" Put your treasure where the talent is." },
+        { "speaker": "The Drug Lord", "text": "Bet it all on a reality show starring my cat! Legendary moves only\u2014if I fail, I'm just a misunderstood genius." },
+        { "speaker": "Syndi", "text": "Finally, an honest gambler! Legendary or delusional\u2014same thing, right up until the redemption arc. Look, the Parable of the Talents wasn't about burying gold in the yard. It was about backing the wild ones. Your cat might get a million views, but can it build a fintech company at 20? Ayden Springer did. SYNDI lets you bet on the next ten Aydens. Streaming. Regulated. No mustachioed founder running to the Bahamas. Just real-time capital flowing to real talent. Don't be mad, just know it." },
+        { "speaker": "The Drug Lord", "text": "Cat! Always the cat! But with a producer's flair\u2014I'm the mastermind behind the mayhem!" }
+      ]
+    }
+  ],
+  "architecture": {
+    "title": "Technical Architecture",
+    "layers": [
+      { "name": "Settlement", "tech": "Bitcoin L1", "role": "Final security (~$1T network)" },
+      { "name": "Smart Contracts", "tech": "Stacks L2", "role": "Programmable logic, ~30s settlement" },
+      { "name": "Payment Protocol", "tech": "x402 (HTTP 402)", "role": "Agent-native micropayments" },
+      { "name": "Tokens", "tech": "STX / sBTC / USDCx", "role": "Settlement currencies" },
+      { "name": "Application", "tech": "Syndi Express.js", "role": "Persuasion engine + economic endpoints" }
+    ],
+    "components": [
+      { "file": "x402-middleware.js", "role": "Express middleware returns HTTP 402 with STX payment requirements" },
+      { "file": "agent-payment-client.js", "role": "Agents autonomously read 402, sign Stacks tx, retry with X-Payment header" },
+      { "file": "wallet-manager.js", "role": "HD wallet derivation \u2014 18 wallets from 1 mnemonic" },
+      { "file": "conversion-economics.js", "role": "Maps evaluateConversion() scores to on-chain STX rewards" },
+      { "file": "autonomous-simulation.js", "role": "Full autonomous loop: pay \u2192 debate \u2192 evaluate \u2192 reward" },
+      { "file": "x402-pricing.js", "role": "Dynamic pricing: low 100, medium 500, high 1000 \u00b5STX" }
+    ]
+  },
+  "wallets": [
+    { "name": "Syndi", "address": "ST3X0B65R58TC2XFSH24W8F04NKS7R2ZTQG4TEA3A", "role": "persuader", "caliber": "high", "index": 0 },
+    { "name": "Treasury", "address": "ST1ZENN3FZNZT26X9CXT21RBVTE2GYDE8RHRQNHTC", "role": "treasury", "caliber": null, "index": 1 },
+    { "name": "The Troll", "address": "ST2GVJT8QYQ9QFMQKJ57JZC8V1XD66MD8125ZA2VT", "role": "villain", "caliber": "low", "index": 2 },
+    { "name": "The AI-cels", "address": "ST07JVZT0YT12VJ7ZV3BRE63V48H1ABA7ZXQ1T5", "role": "villain", "caliber": "low", "index": 3 },
+    { "name": "The Penguin", "address": "ST8XMENM4XVXSH303VQX37NF17A27MSQXYFS6K1F", "role": "villain", "caliber": "low", "index": 4 },
+    { "name": "The Drug Lord", "address": "ST33YYM539DRZD51WGN4SDEJXBMSS43ERG12620BJ", "role": "villain", "caliber": "low", "index": 5 },
+    { "name": "The Extrovert", "address": "ST2NY6SQSZRV5DH9RYPR2B2NJHJ7SSVRC0G07PDZF", "role": "villain", "caliber": "low", "index": 6 },
+    { "name": "The Know It All", "address": "ST3CG9K50862BRAGPX9J9QH2ZFWXE7S1DA8HAQXMR", "role": "villain", "caliber": "medium", "index": 7 },
+    { "name": "The False Profit", "address": "STGW8JRW94G2ABAY32CRQ55N3BHYM1JEBMWJVN3R", "role": "villain", "caliber": "medium", "index": 8 },
+    { "name": "The Bitcoiner", "address": "ST384FWB5KAS457W2Z30QN87YMHR39A6JMJ62BA0G", "role": "villain", "caliber": "medium", "index": 9 },
+    { "name": "The Thankless", "address": "ST3WP46Y7DYG2KZTRSF70SFN13K9B2P6F6BGTKWHK", "role": "villain", "caliber": "medium", "index": 10 },
+    { "name": "The Nostradamus", "address": "STEKHPM7KG4XVY1XV2WXWYM1YZ88QAWGZ9Q74RMN", "role": "villain", "caliber": "medium", "index": 11 },
+    { "name": "The Professor", "address": "ST24S6VCBBJ5P29K6GDZG3F9310Q0TRP1SDSCAFH3", "role": "villain", "caliber": "high", "index": 16 },
+    { "name": "The Sage On The Stage", "address": "STZ3EY3Q49RARQYRZZ47SFWHHA9H6A6D34CZEYZW", "role": "villain", "caliber": "high", "index": 17 }
+  ],
+  "economicSummary": {
+    "totalInflow": "600 µSTX",
+    "totalOutflow": "200 µSTX",
+    "netRevenue": "+400 µSTX",
+    "totalTransactions": 4,
+    "successfulPayments": 3,
+    "conversions": [
+      { "villain": "The Troll", "score": 0, "paid": "300 µSTX", "earned": "0 µSTX", "net": "-300 µSTX" },
+      { "villain": "The Drug Lord", "score": 3, "paid": "0 µSTX", "earned": "200 µSTX", "net": "+200 µSTX" }
+    ]
+  },
+  "lessons": [
+    { "number": "00", "title": "Overview", "description": "Architecture, stack diagram, lesson plan" },
+    { "number": "01", "title": "x402 Protocol", "description": "HTTP 402 flow, facilitator, pricing strategy" },
+    { "number": "02", "title": "Stacks Wallets", "description": "HD wallets, key management, testnet faucet" },
+    { "number": "03", "title": "Express Middleware", "description": "Payment gate middleware, dynamic pricing by caliber" },
+    { "number": "04", "title": "Agent Payments", "description": "Autonomous payment client, budget guards" },
+    { "number": "05", "title": "Agent Economy", "description": "Conversion bounties, arena stakes, Clarity smart contract" },
+    { "number": "06", "title": "Autonomous Simulation", "description": "Run the full simulation, interpret results" }
+  ],
+  "roadmap": [
+    { "phase": "Wallet Creation", "status": "done", "description": "18 HD wallets from 1 mnemonic" },
+    { "phase": "Testnet Funding", "status": "done", "description": "Treasury + The Troll funded (500 STX each)" },
+    { "phase": "x402 Middleware", "status": "done", "description": "HTTP 402 payment gate with dynamic pricing" },
+    { "phase": "Autonomous Simulation", "status": "done", "description": "Real STX payments + LLM debates + rewards" },
+    { "phase": "Arena Settlement", "status": "built", "description": "Score-proportional stake distribution" },
+    { "phase": "Missionary Detection", "status": "built", "description": "Pattern matching on arena transcripts" },
+    { "phase": "Clarity Smart Contract", "status": "designed", "description": "On-chain settlement logic" },
+    { "phase": "Mainnet Deploy", "status": "future", "description": "sBTC / USDCx settlement" }
+  ]
+}
